@@ -1,0 +1,10 @@
+int a = read(). int b = read().
+
+while not eq(a,b) [
+	if gt(a,b) [
+		a = sub(a,b).
+	] else [
+		b = sub(b,a).
+	]
+]
+echo(a).

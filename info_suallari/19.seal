@@ -1,0 +1,14 @@
+@ Klaviaturadan daxil edilen n natural ededidin
+@ sonunda nece 0 oldugunu cap edin.
+
+int n = read().
+if ls(n, 1) [ echo(n, "natural eded deyil"). exit(1). ]
+
+int say = 0.
+
+while eq(mod(n, 10), 0) [
+	say = add(say, 1).
+	n = wdiv(n, 10).
+]
+
+echo(say).

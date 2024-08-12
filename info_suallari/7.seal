@@ -1,0 +1,17 @@
+@ verilen e-poct ve sifre ile sisteme girisi yoxlayan proqram yazin.
+
+&string email = "email@inbox.ru".
+&string password = "321abc".
+
+&string giris_email = read("Emaili daxil edin: ").
+&string giris_password = read("Sifreni daxil edin: ").
+
+if seq(giris_email, email) [
+	if seq(giris_password, password) [
+		echo("Sisteme ugurla daxil olundu").
+	] else [
+		echo("Sifre yanlisdir").
+	]
+] else [
+	echo("Mail yanlisdir").
+]

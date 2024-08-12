@@ -1,0 +1,16 @@
+@ klaviaturadan daxil edilen ededin reqemleri cemine bolunmesini yoxlayin.
+
+int n = read().
+int sum = 0.
+int temp = n.
+
+while not eq(temp, 0) [
+	sum = add(sum, mod(temp, 10)).
+	temp = wdiv(temp, 10).
+]
+
+if eq(mod(n, sum), 0) [
+	echo("Bolunur").
+] else [
+	echo("Bolunmur").
+]

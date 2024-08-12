@@ -1,0 +1,18 @@
+&int num = mod(random(), 100).
+int guess = -1.
+int gc = 0.
+
+echo("Interval is [0:100)").
+
+while not eq(guess, num) [
+	guess = read("What is your guess? ").
+	gc = add(gc, 1).
+
+	if gt(guess, num) [
+		echo("Too big").
+	] else if ls(guess, num) [
+		echo("Too small").
+	]
+]
+
+echo("You won after", gc, "guess(es)").

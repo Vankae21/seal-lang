@@ -1,0 +1,10 @@
+@ klaviaturadan daxil edilmis ededin reqemlerini oldugu ardicilliqla cap edin.
+
+int n = read().
+int i = 0.
+string str = tostring(n).
+
+while not eq(i, len(str)) [
+	echo(str>>i).
+	i = add(i, 1).
+]

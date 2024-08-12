@@ -1,0 +1,8 @@
+@ Tamilla ad gununu qeyd edir. O, elindeki pulla ne qeder
+@ keks ala biler ve ne qeder pulu artiq qalar?
+
+int keks = read("1 keksin pulu: ").
+int pul = read("Tamillanin pulu: ").
+
+echo("Keks sayi:", wdiv(pul, keks), ",",
+	 "Qaliq pul:", mod(pul, keks)).

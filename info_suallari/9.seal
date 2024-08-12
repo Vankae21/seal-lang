@@ -1,0 +1,15 @@
+@ klaviaturadan daxil edilen n natural ededidin tek reqemlerinin cemini ve sayini cap edin.
+
+int n = read().
+int cem = 0.
+int say = 0.
+
+while not eq(n, 0) [
+	if eq(mod(mod(n, 10), 2), 1) [
+		cem = add(cem, mod(n, 10)).
+		say = add(say, 1).
+	]
+	n = div(n, 10).
+]
+
+echo("Cem:", cem, "Say:", say).

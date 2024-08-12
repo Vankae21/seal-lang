@@ -1,0 +1,21 @@
+@ klaviaturadan daxil edilen n>1 ededidin
+@ murekkeb sade yoxsa oldugunu yoxlayin.
+
+int n = read().
+if ls(n, 2) [ echo(n, "1-den boyuk natural eded deyil"). exit(1). ]
+int i = 1.
+
+bool sade = true.
+
+while sade and not eq(i, wdiv(n, 2)) [
+	i = add(i, 1).
+	if eq(mod(n, i), 0) [
+		sade = false.
+	]
+]
+
+if sade [
+	echo("Sade ededdir").
+] else [
+	echo("Murekkeb ededdir").
+]

@@ -1,0 +1,12 @@
+@ klaviaturadan daxil edilen n sayda ededin ededi ortasi
+
+int sum = 0.
+int n = read("Ededlerin sayi: ").
+int temp = n.
+
+while not eq(n, 0) [
+	sum = add(sum, read()).
+	n = sub(n, 1).
+]
+
+echo(div(sum, temp)).

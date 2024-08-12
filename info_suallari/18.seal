@@ -1,0 +1,21 @@
+@ 1-den 100-e kimi (100 daxil deyil)
+@ ededlerin yazilisindaki 3 reqeminin sayini
+@ cap edin.
+
+int i = 1.
+string s = "".
+int l = 0.
+int say = 0.
+
+while ls(i, 100) [
+	s = tostring(i).
+	l = len(s).
+	while not eq(l, 0) [
+		l = sub(l, 1).
+		if 
+	]
+]
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@ ------------------------------------------------- @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

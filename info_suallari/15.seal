@@ -1,0 +1,16 @@
+@ Klaviaturadan n sayda natural eded daxil edilir.
+@ Bu ededler arasinda en kiciyi cap edin.
+
+int n = sub(read(), 1).
+int r = read().
+int kicik = r.
+
+while not eq(n, 0) [
+	r = read().
+	if ls(r, kicik) [
+		kicik = r.
+	]
+	n = sub(n, 1).
+]
+
+echo(kicik).

@@ -1,0 +1,12 @@
+@ n natural ededidin ozunden evvel ve sonra gelen ededleri ve onlarin tek yoxsa cut olduqlarini cap edin.
+
+int n = read().
+string msg = "".
+
+if eq(mod(n, 2), 0) [
+	msg = "tek ededlerdir".
+] else [
+	msg = "cut ededlerdir".
+]
+
+echo(sub(n, 1), add(n, 1), msg).

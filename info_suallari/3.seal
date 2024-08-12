@@ -1,0 +1,12 @@
+@ daxil edilen natural ededin 6-ya tam bolunmesini yoxlayin, 'He' ya da 'Yox' cap edin
+
+int n = read().
+if ls(n,1) [
+	exit().
+]
+
+if eq(mod(n,6),0)[
+	echo("He").
+] else [
+	echo("No").
+]

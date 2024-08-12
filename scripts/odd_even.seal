@@ -1,0 +1,7 @@
+int n = read("Input your number: ").
+
+if eq(mod(n,2), 0) [
+	echo("It's even").
+] else [
+	echo("It's odd").
+]

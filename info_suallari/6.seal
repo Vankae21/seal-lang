@@ -1,0 +1,13 @@
+@ ayin daxil edilmis sira nomresine gore ilin muvafiq feslini cap edin.
+
+int n = read().
+
+if eq(n, 1) or eq(n, 2) or eq(n, 12) [
+	echo("Qis").
+] else if gtq(n, 3) and lsq(n, 5) [
+	echo("Yaz").
+] else if gtq(n, 6) and lsq(n, 8) [
+	echo("Yay").
+] else if gtq(n, 9) and lsq(n, 11) [
+	echo("Payiz").
+]

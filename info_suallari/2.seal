@@ -1,0 +1,14 @@
+@ ucbucagin novunu mueyyen edin (beraberterefli, beraberyanli, muxtelifterefli)
+
+int a = read(). int b = read(). int c = read().
+string nov = "".
+
+if eq(a,b) and eq(a,c) and eq(b,c) [
+	nov = "Beraberterefli".
+] else if eq(a,b) or eq(a,c) or eq(b,c) [
+	nov = "Beraberyanli".
+] else [
+	nov = "Muxtelifterefli".
+]
+
+echo(nov).

@@ -1,0 +1,29 @@
+@ klaviaturadan 100-den kicik daxil edilen natural ededin nece reqemli oldugunu cap edin
+int n = read().
+if ls(n,1) or gt(n, 99) [
+	echo("Interval: [1:99]").
+	exit().
+]
+
+@ 1-ci yol
+string s = tostring(n).
+
+if eq(len(s),1) [
+	echo("Birreqemli").
+] else [
+	echo("Ikireqemli").
+]
+
+@ 2-ci yol
+int c = 0.
+
+while not eq(n, 0) [
+	c = add(c,1).
+	n = div(n,10).
+]
+
+if eq(c,1) [
+	echo("Birreqemli").
+] else [
+	echo("Ikireqemli").
+]

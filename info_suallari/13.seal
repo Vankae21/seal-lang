@@ -1,0 +1,9 @@
+@ Klaviaturadan daxil edilmis n setrinin movqece en orta
+@ simvolunu cap edin. Yoxdursa, 0 cap edin.
+
+string n = read().
+if eq(mod(len(n), 2), 0) [
+	echo(0).
+] else [
+	echo(n>>wdiv(len(n), 2)).
+]

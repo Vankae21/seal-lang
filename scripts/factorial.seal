@@ -1,0 +1,9 @@
+int x = read("Hansi ededin faktorialini isteyirsen? ").
+int factorial = 1.
+
+while not eq(x, 0) [
+	factorial = mul(factorial, x).
+	x = sub(x, 1).
+]
+
+echo("Cavab:", factorial).

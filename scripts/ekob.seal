@@ -1,0 +1,13 @@
+int a = read().
+int b = read().
+int c = mul(a,b).
+
+while not eq(a,b) [
+	if gt(a,b) [
+		a = sub(a, b).
+	] else [
+		b = sub(b, a).
+	]
+]
+c = div(c,a).
+echo(c).

@@ -1,0 +1,9 @@
+@ 1-den 1000-e qeder (1000 daxil deyil)
+@ butun tek ededleri cap edin.
+
+int i = 1.
+
+while ls(i, 1000) [
+	echo(i).
+	i = add(i, 2).
+]

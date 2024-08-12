@@ -1,0 +1,11 @@
+@ Klaviaturadan daxil edilen ededin
+@ tam ve kesr hissesini cap edin.
+
+float n = read().
+int tam = n.
+
+if ls(n, 0) [
+	echo(sub(tam, 1), sub(1, sub(tam, n))).
+] else [
+	echo(tam, sub(n, tam)).
+]

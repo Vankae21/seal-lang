@@ -1,0 +1,10 @@
+@ 2-den boyuk eded daxil edilmisdir. 2-den evvelki cut ededi cap edin
+
+int n = read().
+if eq(mod(n,2),0) [
+	n = sub(n,2).
+] else [
+	n = sub(n,1).
+]
+
+echo(n).

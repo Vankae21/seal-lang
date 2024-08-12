@@ -1,0 +1,29 @@
+int n = read("Ededi daxil edin: ").
+bool sade = true.
+&int sa = 2.
+if ls(n,2) [
+	echo("1-den boyuk olmalidir").
+	exit().
+] else if eq(n,2) [
+	echo("Sade").
+	exit().
+] else [
+	int i = 2.
+	while ls(i, n) [
+		if eq(mod(n,i), 0) [
+			sade = false.
+			stop.
+		]
+		i = add(i, 1).
+	]
+]
+
+if sade [
+	echo("Sade").
+] else [
+	echo("Murekkeb").
+]
+
+if eq(5,2) [
+	echo("sa").
+]

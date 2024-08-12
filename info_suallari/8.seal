@@ -1,0 +1,16 @@
+@ n ve b(b != 0) natural ededleri klaviaturadan daxil olunur.
+@ Kvadratlari b-ye tam bolunen n-den kicik butun natural ededlerin sayini tapin. 
+
+int n = read("n: ").
+&int b = read("b: ").
+if ls(b, 1) [ exit(1). ]
+int say = 0.
+
+while not eq(n, 1) [
+	n = sub(n, 1).
+	if eq(mod(pow(n, 2), b), 0) [
+		say = add(say, 1).
+	]
+]
+
+echo("Ededlerin sayi:", say).
