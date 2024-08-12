@@ -1,0 +1,48 @@
+%YAML 1.2
+---
+name: Seal
+file_extensions:
+  - seal
+scope: source.seal
+
+contexts:
+  main:
+    # Match and highlight keyword types
+    - match: \b(int|float|bool|string|char)\b
+      scope: keyword.type.seal
+
+    # Match and highlight keywords and built-in functions
+    - match: \b(if|else|while|not|and|or|stop|exit|echo|read|mod|eq|ls|lsq|gt|gtq|seq|add|sub|mul|div|random|sqrt|pow|len|skip|stop|cat|tostring|wdiv|sin|cos|abs|upper|lower|ceq)\b
+      scope: keyword.control.seal
+
+    # Match and highlight boolean literals
+    - match: \b(true|false)\b
+      scope: constant.language.seal
+
+    # Match and highlight constant variables (starting with &)
+    - match: \b&[a-zA-Z_][a-zA-Z0-9_]*\b
+      scope: constant.variable.seal
+
+    # Match and highlight regular variables
+    - match: \b[a-zA-Z_][a-zA-Z0-9_]*\b
+      scope: variable.other.seal
+
+    # Match and highlight numeric literals
+    - match: \b\d+(\.\d+)?\b
+      scope: constant.numeric.seal
+
+    # Match and highlight string literals
+    - match: '"[^"]*"'
+      scope: string.quoted.double.seal
+
+    # Match and highlight single-quoted char literals
+    - match: "'[^']*'"
+      scope: string.quoted.single.seal
+
+    # Match and highlight comments (lines starting with @)
+    - match: '@[^\n]*'
+      scope: comment.line.seal
+
+    # Match and highlight punctuation
+    - match: '[\[\](),.]'
+      scope: punctuation.seal
